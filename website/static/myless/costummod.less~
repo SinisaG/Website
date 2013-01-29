@@ -1,8 +1,15 @@
-.onTop{
-	position:relative;
-	z-index:1;
-	
+.gradientLineV{ 
+  height:100%;
+  background:-moz-linear-gradient(left, #333F48 0%,#333F48 50%,#333F48 100%); 
+  background:-webkit-linear-gradient(left, #333F48 0%,#333F48 50%,#333F48 100%); 
+  background:linear-gradient(left,#333F48 0%,#333F48 50%,#333F48 100%);
+  width:1px;
+  
+}
 
+
+.onTop{
+	z-index:1;
 }
 
 .nav li {
@@ -22,14 +29,6 @@
 	overflow:hidden;
 }
 
-.squares{
-
-	background-image:url('/static/header/squares.png');
-	background-repeat:no-repeat;
-	background-position:738px 192px;
-
-}
-
 .wrapper{
 
 	margin-left:23px;
@@ -37,20 +36,18 @@
 
 }
 
+
 .container-left{
   width:47.4%;
   float:left;
-  margin-right:48px;
-  margin-top:30px;
-  text-align:justify;
 }
 
 .container-right{
   width:47.4%;
   float:left;
-  margin-top:30px;
-   text-align:justify;
+  margin-left:48px;
 }
+
 
 .heading1{
 	font-size:96px;
@@ -80,14 +77,6 @@
 	padding-bottom:23px;
 }
 
-.positiontext{
-
-	
-	padding-bottom:43px;
-	margin-top:48px;
-
-}
-
 .left{
 	text-align:left;
 }
@@ -112,7 +101,6 @@
 
 .footer{
 
-	padding-top:60px;
 	padding-bottom:30px;
 	font-size:12px;
 	text-align:center;
@@ -129,11 +117,9 @@ img.bottom {
 img.line{
 	padding-bottom:20px;
 	padding-top:10px;
-	
-
 }
 
-.flineelement{
+.flineelement{	
 	display:inline;
 	padding-left:20px;
 }
@@ -143,5 +129,159 @@ img.line{
 	padding-right:20px;
 }
 
+.indexHeadingsFirst{
+
+	padding-top:85px;
+	font-family:"Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:700;
+	font-size:30px;
+	line-height:48px;
+}
+
+
+
+.indexHeadings{
+
+	padding-top:110px;
+	font-family:"Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:700;
+	font-size:30px;
+	line-height:48px;
+}
+
+.indexSubHeadings{
+
+	font-family:"Open Sans Condensed","Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size:40px;
+	line-height:45px;
+	
+}
+
+.smallPrint{
+
+	font-family:"Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:700;
+	font-size:11px;
+	color:#E03C31;
+	padding-bottom:20px;
+}
+
+.projectHeading{
+
+	font-family:"Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:700;
+	font-size:22px;
+	line-height:25px;
+	padding-bottom:20px;
+}
+
+.description{
+
+	font-family:"Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:16px;
+	line-height:25px;
+}
+
+.giftCannonIndexPic{
+
+	margin-bottom:-0px;
+}
+
+.gymondoIndexPic{
+
+
+	margin-top:31px;
+	padding-bottom:20px;
+
+}
+
+.clientsContainerIndex{
+
+	background-color:#e6e8e9;
+	padding-left:22px;
+	padding-right:22px;
+}
+
+.singleClientIndex{
+
+	width:27%;
+	padding-left:24px;
+	padding-right:24px;
+	float:left;
+}
+
+.imageClientPro7{
+
+	padding-top:27px;
+	padding-bottom:40px;
+}
+
+.imageClientRocket{
+
+	padding-top:38px;
+	padding-bottom:39px;
+}
+
+.singleClientFriend{
+
+	padding-top:45px;
+	padding-bottom:50px;
+
+}
+
+.descriptionClients{
+
+	font-family:"Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:12px;
+	line-height:18px;
+	padding-bottom:60px;
+}
+
+.textMethodology1{
+
+	padding-top:30px;
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	margin-left:-40px;
+}
+
+.textMethodology2{
+	
+	margin-top:-20px;
+	padding-bottom:98px;
+	padding-left:270px;
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	margin-left:-35px;
+	
+}
+
+.headingMethodology{
+
+	font-family: 'Rock Salt', cursive;
+	font-size:16px;
+	line-height:50px;
+	color:#E03C31;
+
+}
+
+
+.innerMethodology{
+
+	font-family: 'Rock Salt', cursive;
+	font-size:9px;
+	line-height:17px;
+}
+
+
+.imageTeamIndex{
+
+	margin-top:-55px;
+	padding-bottom:110px;
+
+}
 
 
