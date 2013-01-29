@@ -1,0 +1,4 @@
+.paintitblack {
+  color:black;
+  background-color:black;
+}

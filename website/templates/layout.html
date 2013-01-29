@@ -1,0 +1,143 @@
+﻿<%inherit file="base.html" />
+<%namespace name="head" file="headers.html"/>
+
+
+<%block name="header">
+
+	
+	
+	<div class="paintheader">
+		<div style="background-image:url('/static/header/background.png'); background-repeat:no-repeat; position:relative;" class="container" >	
+				<div class="wrapper">				
+					<div class="navbar">
+						<a class="brand" href="/"> <img src="/static/header/Logo.png">	 </a>
+				  		<div class="navbar-inner">		
+							<ul class="nav pull-right">
+					  			<li class="${request.context.active('projects')}"><a href="/projects">Projects</a></li>
+					  			<li class="${request.context.active('clients')}"><a href="/clients">Clients</a></li>
+					  			<li class="${request.context.active('methodology')}"><a href="/methodology">Methodology</a></li>
+								<li class="${request.context.active('team')}"><a href="/team">Team</a></li>
+							</ul>
+			  			</div>
+					</div>
+					<div id="myCarousel" class="onTop carousel slide">
+				  <!-- Carousel items -->
+				  		<div class="carousel-inner">
+						<div class="active item">${head.header1()}</div>
+						<div class="item">${head.header2()}</div>
+						<div class="item">${head.header3()}</div>
+						<div class="item">${head.header4()}</div>
+						<div class="item">${head.header5()}</div>
+				  	</div>
+				</div>
+		
+		 </div>
+			
+			<img style="position:absolute;top:232px;right:-528px;" src="/static/header/squares.png"/>
+		</div>	
+		<div style="background-color:white; height:25px;"></div>	
+	</div>
+</%block>
+
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel();
+	
+  });
+</script>
+
+
+
+
+<%block name="content">
+
+	<div class="container">
+
+		<div id="follow" data-spy="affix" data-offset-top="520">
+			<div class="row">
+				<div class="span12 center" style="background-color:white;">
+					<ul class="nav">
+						<li><a href="#post1">Projects</a></li>
+						<li><a href="#post2">Clients</a></li>
+						<li><a href="#post3">Test</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<h1 style="padding-top:30px;"> Here will content go! </h1>
+			<div class="container-left" style="padding-bottom:1000px">
+				<div id="post1">
+		
+								<p>Lorem Ipsum je slepi tekst, ki se uporablja pri razvoju tipografij in pri pripravi za tisk. Lorem Ipsum je v uporabi že več kot petsto let saj je to kombinacijo znakov neznani tiskar združil v vzorčno knjigo že v začetku 16. stoletja. To besedilo pa ni zgolj preživelo pet stoletij, temveč se je z malenkostnimi spremembami uspešno uveljavilo tudi v elektronskem namiznem založništvu. Na priljubljenosti je Lorem Ipsum pridobil v sedemdesetih letih prejšnjega stoletja, ko so na trg lansirali Letraset folije z Lorem Ipsum odstavki. V zadnjem času se Lorem Ipsum pojavlja tudi v priljubljenih programih za namizno založništvo kot je na primer Aldus PageMaker.</p>
+
+				 </div>
+	<div id="post3" style="padding-top:160px; margin-top:-100px">
+	<p>Lorem Ipsum je slepi tekst, ki se uporablja pri razvoju tipografij in pri pripravi za tisk. Lorem Ipsum je v uporabi že več kot petsto let saj je to kombinacijo znakov neznani tiskar združil v vzorčno knjigo že v začetku 16. stoletja. To besedilo pa ni zgolj preživelo pet stoletij, temveč se je z malenkostnimi spremembami uspešno uveljavilo tudi v elektronskem namiznem založništvu. Na priljubljenosti je Lorem Ipsum pridobil v sedemdesetih letih prejšnjega stoletja, ko so na trg lansirali Letraset folije z Lorem Ipsum odstavki. V zadnjem času se Lorem Ipsum pojavlja tudi v priljubljenih programih za namizno založništvo kot je na primer Aldus PageMaker.</p></div>
+
+
+				<div id="post2">
+				
+								<p>Lorem Ipsum je slepi tekst, ki se uporablja pri razvoju tipografij in pri pripravi za tisk. Lorem Ipsum je v uporabi že več kot petsto let saj je to kombinacijo znakov neznani tiskar združil v vzorčno knjigo že v začetku 16. stoletja. To besedilo pa ni zgolj preživelo pet stoletij, temveč se je z malenkostnimi spremembami uspešno uveljavilo tudi v elektronskem namiznem založništvu. Na priljubljenosti je Lorem Ipsum pridobil v sedemdesetih letih prejšnjega stoletja, ko so na trg lansirali Letraset folije z Lorem Ipsum odstavki. V zadnjem času se Lorem Ipsum pojavlja tudi v priljubljenih programih za namizno založništvo kot je na primer Aldus PageMaker.</p>
+
+	
+
+				 </div>
+
+			</div>
+
+			<div class="container-right">
+				Lorem Ipsum je slepi tekst, ki se uporablja pri razvoju tipografij in pri pripravi za tisk. Lorem Ipsum je v uporabi že več kot petsto let saj je to kombinacijo znakov neznani tiskar združil v vzorčno knjigo že v začetku 16. stoletja. To besedilo pa ni zgolj preživelo pet stoletij, temveč se je z malenkostnimi spremembami uspešno uveljavilo tudi v elektronskem namiznem založništvu. Na priljubljenosti je Lorem Ipsum pridobil v sedemdesetih letih prejšnjega stoletja, ko so na trg lansirali Letraset folije z Lorem Ipsum odstavki. V zadnjem času se Lorem Ipsum pojavlja tudi v priljubljenih programih za namizno založništvo kot je na primer Aldus PageMaker.
+
+	
+			</div>
+
+	</div>
+		
+	
+	
+</%block>
+
+<%block name="footer">
+	<div class="container">
+			<div class="footer">
+				
+					<div class="ffirstlineelement"><a href="#">Home</a></div>
+					<div class="ffirstlineelement"><a href="#">Projects</a></div>
+					<div class="ffirstlineelement"><a href="#">Clients</a></div>
+					<div class="ffirstlineelement"><a href="#">Methodology</a></div>
+					<div class="ffirstlineelement"><a href="#">Team</a></div>
+					<div class="ffirstlineelement"><a href="#">About Us</a></div>
+					<div class="ffirstlineelement"><a href="#">Contact</a></div>
+					<div class="ffirstlineelement"><a href="#">Impressum</a></div>
+					<div class="ffirstlineelement"><a href="#">Newsletter</a></div>
+				
+					<img class="line" src="/static/Icons/Line_gradient.png"/>
+				
+				
+					<div class="flineelement"> <img class="bottom" src="/static/Icons/GPS.png"/> Landsberger Allee 117, 10407 Berlin, Germany</div> <div class="flineelement"> <img class="bottom" src="/static/Icons/Phone.png"/> +49 30 99272540</div>
+					<div class="flineelement"> <img class="bottom" src="/static/Icons/mail.png"/> enquiries@hackandcraft.com </div>
+					 <a href="#"><img class="bottom" src="/static/Icons/twitter.png"/></a>
+					 <a href="#"><img class="bottom" src="/static/Icons/facebook.png"/></a> 
+					 <script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
+<a href="skype:hackandcraft?call"><img class="bottom" src="/static/Icons/skype.png"/> </a>
+					
+				
+				<img class="line" src="/static/Icons/Line_gradient.png"/>
+	
+				<div class="copyright"> &copy; 2013 Hack&Craft GmbH All rights reserved </div>
+
+			</div>
+
+				
+			
+								
+		</div>
+
+			
+	
+	</div>
+
+
+</%block>
+
