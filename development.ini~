@@ -5,14 +5,14 @@
 
 [app:main]
 use = egg:Website
-mako.directories = 2ebsite:templates
+mako.directories = website:templates
 pyramid.reload_templates = true
 pyramid.debug_authorization = false
 pyramid.debug_notfound = false
 pyramid.debug_routematch = false
 pyramid.default_locale_name = en
 pyramid.includes = 
-    pyramid_debugtoolbar
+#    pyramid_debugtoolbar
 
 # By default, the toolbar only appears for clients from IP addresses
 # '127.0.0.1' and '::1'.

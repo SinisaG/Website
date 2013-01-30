@@ -5,36 +5,7 @@
 
 @media (max-width: 767px) {
 
-  .heading1{
-	font-size:32px;
-	line-height:40px;
-	color:#E03C31;	
-	font-family:"Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight:300;
-		
-
-    }
-.heading2{
-
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weigth:300;
-	font-size:16px;
-	line-height:24px;
-	color:white;
-}
-
-.heading22{
-
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weigth:300;
-	font-size:16px;
-	line-height:24px;
-	color:white;
-	font-weight:300;
-	color:#e6e8e9;
-	padding-bottom:23px;
-}
-
+	
 
   // Padding to set content in a bit
   body {

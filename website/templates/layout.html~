@@ -2,9 +2,6 @@
 <%namespace name="head" file="headers.html"/>
 
 <%block name="header">
-
-	
-	
 	<div class="paintheader">
 		<div style="background-image:url('/static/header/background.png'); background-repeat:no-repeat; position:relative;" class="container" >	
 				<div class="wrapper">				
@@ -19,9 +16,9 @@
 							</ul>
 			  			</div>
 					</div>
-					<div id="myCarousel" class="onTop carousel slide">
+					<div id="myCarousel" class="onTop carousel slide" style="overflow:visible"> 
 				  <!-- Carousel items -->
-				  		<div class="carousel-inner">
+				  		<div class="carousel-inner" style="overflow:visible">
 						<div class="active item">${head.header1()}</div>
 						<div class="item">${head.header2()}</div>
 						<div class="item">${head.header3()}</div>
@@ -68,7 +65,7 @@
 					<div class="ffirstlineelement"><a href="#">Impressum</a></div>
 					<div class="ffirstlineelement"><a href="#">Newsletter</a></div>
 				
-					<img class="line" src="/static/Icons/Line_gradient.png"/>
+					<div class="gradientH"></div>
 				
 				
 					<div class="flineelement"> <img class="bottom" src="/static/Icons/GPS.png"/> Landsberger Allee 117, 10407 Berlin, Germany</div> <div class="flineelement"> <img class="bottom" src="/static/Icons/Phone.png"/> +49 30 99272540</div>
@@ -79,7 +76,7 @@
 <a href="skype:hackandcraft?call"><img class="bottom" src="/static/Icons/skype.png"/> </a>
 					
 				
-				<img class="line" src="/static/Icons/Line_gradient.png"/>
+				<div class="gradientH"></div>
 	
 				<div class="copyright"> &copy; 2013 Hack&Craft GmbH All rights reserved </div>
 
