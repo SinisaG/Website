@@ -238,6 +238,44 @@ img.line{
 	padding-bottom:39px;
 }
 
+
+.imageClientSpring{
+
+	padding-top:10px;
+	padding-bottom:39px;
+}
+
+
+.imageClientSeven{
+
+	padding-top:60px;
+	padding-bottom:39px;
+}
+
+.imageClientAmerica{
+
+	padding-top:33px;
+	padding-bottom:16px;
+}
+
+.imageClientFoundFare{
+
+	padding-top:49px;
+	padding-bottom:39px;
+}
+
+.imageClientZanox{
+
+	padding-top:30px;
+	padding-bottom:28px;
+}
+
+.imageClientBillPay{
+
+	padding-top:45px;
+	padding-bottom:39px;
+}
+
 .singleClientFriend{
 
 	padding-top:45px;
