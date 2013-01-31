@@ -1,18 +1,18 @@
 <%def name="header1()">
-	
-	<img style="float:left; margin-left:4px; margin-right:40px; margin-top:-11px;" src="/static/header/IMG_3.png"/>
+	<div class="row" style="margin-left:0px;">
+		<img style="float:left; margin-left:4px; margin-right:40px; margin-top:-11px;" src="/static/header/IMG_3.png"/>
 							
-	<div class="heading1 right">Lorem Sit</div>
-	<div class="heading1 left">Lorem Sit</div>  
-	<div class="heading2 right">Lorem Sit more text</div> 
-	<div class="heading22 left">Lorem Sit more text</div> 		
-
+		<div class="heading1 right">Lorem Sit</div>
+		<div class="heading1 left">Lorem Sit</div>  
+		<div class="heading2 right">Lorem Sit more text</div> 
+		<div class="heading22 left">Lorem Sit more text</div> 		
+	</div>
 </%def>
 
 <%def name="header2()">
 
 
-	<img style="float:left;margin-left:-57px;margin-right:40px; margin-top:8px; margin-bottom:-17px; min-height:376px; z-index:2" src="/static/header/IMG_2.png"/>
+	<img style="float:left;margin-left:-57px;margin-right:40px; margin-top:8px; margin-bottom:-17px; min-height:376px;" src="/static/header/IMG_2.png"/>
 									
 	<div class="heading1 right">Lorem Sit</div>
 	<div class="heading1 left">Lorem Sit</div>  

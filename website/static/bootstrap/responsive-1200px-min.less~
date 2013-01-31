@@ -25,4 +25,10 @@
     margin-left: 0;
   }
  
+ .container{
+
+	width:976px;
+
+	}
+
 }

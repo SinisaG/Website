@@ -109,7 +109,7 @@
 			How we roll.
 		</div>
 
-		<div class="row">
+		<div class="row" style="margin-left:0px">
 			<div style="margin-left:62px">
 				<div class="container-left" style="background-image:url('/static/index/Methodology.png');background-repeat:no-repeat;">
 

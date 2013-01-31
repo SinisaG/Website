@@ -196,6 +196,7 @@ img.line{
 	
 }
 
+
 .gradientV{
 
 	width:1px;
@@ -300,6 +301,16 @@ img.line{
 	margin-left:-40px;
 }
 
+.textMethodology1M{
+	
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	float:left;
+	margin-left:120px;
+	margin-top:-40px;
+}
+
 .textMethodology2{
 	
 	margin-top:-20px;
@@ -312,6 +323,17 @@ img.line{
 	
 }
 
+
+.textMethodology2M{
+
+	float:right;
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	margin-top:20px;
+	
+}
+
 .headingMethodology{
 
 	font-family: 'Rock Salt', cursive;
@@ -321,12 +343,31 @@ img.line{
 
 }
 
+.headingMethodologyM{
+
+	font-family: 'Rock Salt', cursive;
+	font-size:26px;
+	line-height:50px;
+	color:#E03C31;
+
+}
+
+
 
 .innerMethodology{
 
 	font-family: 'Rock Salt', cursive;
 	font-size:9px;
 	line-height:17px;
+}
+
+
+.innerMethodologyM{
+
+	font-family: 'Rock Salt', cursive;
+	font-size:15px;
+	line-height:30px;
+	padding-left:20px;
 }
 
 
