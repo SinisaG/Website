@@ -34,17 +34,20 @@
 		<div id ="giftcannonDetails" class="row right" style="padding-bottom:50px;  position:relative"> <a class="link" href="#giftcannon"> Back </a></div>	
 
 		<div style="padding-top:60px; padding-bottom:60px; padding-right:48px; padding-left:48px;" class="clientsContainerIndex">
-			<div style="overflow-x:auto ;overflow-y:hidden;">
-				<div style="width:1254px">
+			
+		<div id="scrollbar1">
+    		<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+    			<div class="viewport">
+       				 <div class="overview">
 				<img style="float:left" src="/static/projects/giftcannon/GC_Details_img_1.png"/>
 				<img style="float:left" src="/static/projects/giftcannon/GC_Details_img_2.png"/>
 				<img style="float:left" src="/static/projects/giftcannon/GC_Details_img_3.png"/>
 				<img style="float:left" src="/static/projects/giftcannon/GC_Details_img_4.png"/>
 				<img style="float:left" src="/static/projects/giftcannon/GC_Details_img_4.png"/>
 				<img style="float:left" src="/static/projects/giftcannon/GC_Details_img_4.png"/>
+					</div>
+				</div>
 			</div>
-		</div>
-
 		</div>
 		<div class="row" style="margin-left:0px;">
 
