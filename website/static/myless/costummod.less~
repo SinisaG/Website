@@ -45,19 +45,9 @@
 	font-size:48px;
 	line-height:68px;
 	color:white;
-}
-
-.heading22{
-
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weigth:300;
-	font-size:48px;
-	line-height:68px;
-	color:white;
-	font-weight:300;
 	color:#e6e8e9;
-	padding-bottom:23px;
 }
+
 
 .left{
 	text-align:left;
@@ -444,18 +434,6 @@ img.line{
 	font-weight:300;
 }
 
-
-#scrollbar1 { width: 100%; clear: both; margin: 20px 0 10px;}
-#scrollbar1 .viewport { width: 1000px;height:100%; overflow: hidden; position: relative; }
-#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; }
-#scrollbar1 .thumb .end,
-#scrollbar1 .thumb { background-color: #003D5D; }
-#scrollbar1 .scrollbar { position: relative; float: right; width: 15px; }
-#scrollbar1 .track { background-color: #D8EEFD; height: 100%; width:13px; position: relative; padding: 0 1px; }
-#scrollbar1 .thumb { height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; }
-#scrollbar1 .thumb .end { overflow: hidden; height: 5px; width: 13px; }
-#scrollbar1 .disable{ display: none; }
-.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
 
 
 

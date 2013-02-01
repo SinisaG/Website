@@ -5,6 +5,7 @@
 	<meta name="keywords" content="HTML, CSS, JavaScript">
 	<meta name="description" content="Hack and Craft awsome website!">
 	<meta name="author" content="Hack and Craft">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   	<title>Hack and craft</title>
   	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Open+Sans+Condensed:300,700|Rock+Salt' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet/less" href="/static/bootstrap/bootstrap.less">

@@ -5,7 +5,7 @@
 	<div class="heading1 right">Lorem Sit</div>
 	<div class="heading1 left">Lorem Sit</div>  
 	<div class="heading2 right">Lorem Sit more text</div> 
-	<div class="heading22 left">Lorem Sit more text</div> 		
+	<div class="heading2 left">Lorem Sit more text</div> 		
 	
 </%def>
 
@@ -17,7 +17,7 @@
 	<div class="heading1 right">Lorem Sit</div>
 	<div class="heading1 left">Lorem Sit</div>  
 	<div class="heading2 right">Lorem Sit more</div> 
-	<div class="heading22 left">Lorem Sit more</div>
+	<div class="heading2 left">Lorem Sit more</div>
 
 </%def>
 
@@ -28,7 +28,7 @@
 		<div class="heading1 right">Lorem Sit</div>
 		<div class="heading1 left">Lorem Sit</div>  
 		<div class="heading2 right">Lorem Sit more text</div> 
-		<div class="heading22 left">Lorem Sit more text</div>
+		<div class="heading2 left" >Lorem Sit more text</div>
 	
 </%def>
 
@@ -39,7 +39,7 @@
 		<div class="heading1 right">Lorem Sit</div>
 		<div class="heading1 left">Lorem Sit</div>  
 		<div class="heading2 right">Lorem Sit and some</div> 
-		<div class="heading22 left">Lorem Sit more </div>
+		<div class="heading2 left">Lorem Sit more </div>
 
 </%def>
 
@@ -50,6 +50,6 @@
 		<div class="heading1 right">Lorem </div>
 		<div class="heading1 left">Lorem </div>  
 		<div class="heading2 right">Lorem Sit more text</div> 
-		<div class="heading22 left">Lorem Sit more text</div>
+		<div class="heading2 left">Lorem Sit more text</div>
 </%def>
 	
