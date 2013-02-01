@@ -4,19 +4,20 @@
 	<meta charset="utf-8">
 	<meta name="keywords" content="HTML, CSS, JavaScript">
 	<meta name="description" content="Hack and Craft awsome website!">
-	<meta name="author" content="Siniša Grubor and Jaka Krevelj">
+	<meta name="author" content="Hack and Craft">
   	<title>Hack and craft</title>
   	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Open+Sans+Condensed:300,700|Rock+Salt' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet/less" href="/static/bootstrap/bootstrap.less">
 	<link rel="stylesheet/less" href="/static/myless/costummod.less">
 	<link rel="stylesheet/less" href="/static/bootstrap/responsive.less">
+	
 	<script src="/static/less-1.3.3.min.js"></script>
 	<script src="/static/jquery.min.js"></script>
 	<script src="/static/bootstrap.js"></script>
-
+	<script src="/static/jquery.tinyscrollbar.min.js"></script>
 </head>
 
-<body data-spy="scroll"style="padding-left:0px; padding-right:0px">
+<body style="padding-left:0px; padding-right:0px">
 ${next.body()}
 </body>
 

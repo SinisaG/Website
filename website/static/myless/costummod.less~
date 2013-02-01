@@ -182,8 +182,7 @@ img.line{
 .clientsContainerIndex{
 
 	background-color:#e6e8e9;
-	padding-left:22px;
-	padding-right:22px;
+
 	position:relative;
 }
 
@@ -197,7 +196,7 @@ img.line{
 }
 
 
-.gradientV{
+.gradientV{ 
 
 	width:1px;
 	height:287px;
@@ -307,7 +306,7 @@ img.line{
 	-moz-transform: rotate(-5deg);
 	-o-transform: rotate(-5deg);
 	float:left;
-	margin-left:120px;
+	margin-left:100px;
 	margin-top:-40px;
 }
 
@@ -386,7 +385,6 @@ img.line{
 	font-size:30px;
 	line-height:48px;
 	margin-bottom:-58px;
-
 }
 
 
@@ -430,5 +428,21 @@ img.line{
 	line-height:48px;
 }
 
+.icons{
+
+	margin-right:2em;
+	margin-top:20px;
+	padding-bottom:110px;
+}
+
+.friendfundBox{
+	width:19.8%;
+	padding-left:2.6%;
+	padding-right:2.6%;
+	float:left;
+	font-family:"Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	padding-bottom:48px;
+}
 
 

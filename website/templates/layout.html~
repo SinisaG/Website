@@ -9,7 +9,7 @@
 						<a class="brand" href="/"> <img src="/static/header/Logo.png">	 </a>
 				  		<div class="navbar-inner">		
 							<ul class="nav pull-right">
-					  			<li class="${request.context.active('projects')}"><a href="/projects">Projects</a></li>
+					  			<li class="${request.context.active('projects') or request.context.active('gymondo')}"><a href="/projects">Projects</a></li>
 					  			<li class="${request.context.active('clients')}"><a href="/clients">Clients</a></li>
 					  			<li class="${request.context.active('methodology')}"><a href="/methodology">Methodology</a></li>
 								<li class="${request.context.active('team')}"><a href="/team">Team</a></li>
@@ -19,7 +19,8 @@
 					<div id="myCarousel" class="onTop carousel slide" style="overflow:visible"> 
 				  <!-- Carousel items -->
 				  		<div class="carousel-inner" style="overflow:visible">
-						<div class="active item">${head.header1()}</div>
+						<div class="row" style="margin-left:20px">
+						<div class="active item">${head.header1()}</div></div>
 						<div class="item">${head.header2()}</div>
 						<div class="item">${head.header3()}</div>
 						<div class="item">${head.header4()}</div>
@@ -38,7 +39,7 @@
 <script>
   $(document).ready(function(){
     $('.carousel').carousel();
-	
+	$(".moveDown").css("padding-bottom",$(window).height()/2);
   });
 </script>
 
@@ -55,11 +56,11 @@
 	<div class="container">
 			<div class="footer">
 				
-					<div class="ffirstlineelement"><a href="#">Home</a></div>
-					<div class="ffirstlineelement"><a href="#">Projects</a></div>
-					<div class="ffirstlineelement"><a href="#">Clients</a></div>
-					<div class="ffirstlineelement"><a href="#">Methodology</a></div>
-					<div class="ffirstlineelement"><a href="#">Team</a></div>
+					<div class="ffirstlineelement"><a href="/">Home</a></div>
+					<div class="ffirstlineelement"><a href="/projects">Projects</a></div>
+					<div class="ffirstlineelement"><a href="/clients">Clients</a></div>
+					<div class="ffirstlineelement"><a href="/methodology">Methodology</a></div>
+					<div class="ffirstlineelement"><a href="/team">Team</a></div>
 					<div class="ffirstlineelement"><a href="#">About Us</a></div>
 					<div class="ffirstlineelement"><a href="#">Contact</a></div>
 					<div class="ffirstlineelement"><a href="#">Impressum</a></div>
@@ -68,17 +69,17 @@
 					<div class="gradientH"></div>
 				
 				
-					<div class="flineelement"> <img class="bottom" src="/static/Icons/GPS.png"/> Landsberger Allee 117, 10407 Berlin, Germany</div> <div class="flineelement"> <img class="bottom" src="/static/Icons/Phone.png"/> +49 30 99272540</div>
-					<div class="flineelement"> <img class="bottom" src="/static/Icons/mail.png"/> enquiries@hackandcraft.com </div>
-					 <a href="#"><img class="bottom" src="/static/Icons/twitter.png"/></a>
-					 <a href="#"><img class="bottom" src="/static/Icons/facebook.png"/></a> 
+					<div class="flineelement"><a href ="https://maps.google.com/?q=landsberger+allee+117,+berlin,+germany"> <img class="bottom" src="/static/Icons/GPS.png"/>   Landsberger Allee 117, 10407 Berlin, Germany</a></div> <div class="flineelement"> <a href="tel:+49 30 99272540"> <img class="bottom" src="/static/Icons/Phone.png"/> +49 30 99272540</a></div>
+					<div class="flineelement"> <img class="bottom" src="/static/Icons/mail.png"/><a href="mailto:enquiries@hackandcraft.com"> enquiries@hackandcraft.com </a></div>
+					 <a href="http://www.twitter.com/"><img class="bottom" src="/static/Icons/twitter.png"/></a>
+					 <a href="http://www.facebook.com/"><img class="bottom" src="/static/Icons/facebook.png"/></a> 
 					 <script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
 <a href="skype:hackandcraft?call"><img class="bottom" src="/static/Icons/skype.png"/> </a>
 					
 				
 				<div class="gradientH"></div>
 	
-				<div class="copyright"> &copy; 2013 Hack&Craft GmbH All rights reserved </div>
+				<div class="copyright"> &copy; 2013 <a href="/"> Hack&Craft GmbH </a> All rights reserved </div>
 
 			</div>
 

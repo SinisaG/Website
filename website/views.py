@@ -16,9 +16,14 @@ def includeme(config):
     config.add_route('clients', '/clients', factory=RootContext)
     config.add_route('methodology', '/methodology', factory=RootContext)
     config.add_route('team', '/team', factory=RootContext)
+    config.add_route('gymondo', '/projects/gymondo', factory=RootContext)
+    config.add_route('friendfund', '/projects/friendfund', factory=RootContext)
+    config.add_route('giftcannon', '/projects/giftcannon', factory=RootContext)
     return config
 
-
+@view_config(route_name='giftcannon', renderer='/projects/giftcannon.html')
+@view_config(route_name='friendfund', renderer='/projects/friendfund.html')
+@view_config(route_name='gymondo', renderer='/projects/gymondo.html')
 @view_config(route_name='team', renderer='team.html')
 @view_config(route_name='methodology', renderer='methodology.html')
 @view_config(route_name='clients', renderer='clients.html')
