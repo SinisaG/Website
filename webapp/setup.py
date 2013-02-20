@@ -9,7 +9,18 @@ CHANGES = open(os.path.join(here, 'CHANGES.txt')).read()
 requires = [
     'pyramid',
     'pyramid_debugtoolbar',
-    'waitress',
+    'formencode',
+    'pastescript',
+    'pastedeploy',
+    'mako',
+    'babel',
+    'lingua',
+    'beaker',
+    'paste',
+    'simplejson',
+    'dnspython',
+    'turbomail',
+    'uuid'
     ]
 
 setup(name='Website',
