@@ -1,0 +1,37 @@
+This file contains current known bugs, that have to be fixed and should not be forgoten
+
+Regardin code:
+
+	- All the styles that are not in classes should be put in to
+	- Devide my less file in modules(header, footer, content pages,..)
+
+
+Browsers:
+
+	-IE8:
+		-header gets cut of by caraousel
+		-gradient colors are messed up 
+
+	-Opera:
+		-Gradient is displayed as full line
+
+	-Chrome:
+		-On Windows on methodology page image and text are not aligned corrected (works well in linux)
+
+	-Safari
+		-No bugs noticed so far -- Yupiii! :)
+
+Smaller screens:
+
+	-Should do classes fixes so the fonts and images are resised correctly	 
+
+Design flaws: 
+
+	- FriendFund is missing a stamp and icons
+	- Stamps are not cut of correctly 
+
+//if anyone(Martion) reviews this, please fill in the 
+
+Bugs that I missed: 
+
+- ?

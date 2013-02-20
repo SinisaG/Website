@@ -1,0 +1,55 @@
+<%def name="header1()">
+
+	<img style="float:left; margin-left:4px; margin-right:40px; margin-top:-11px;" src="/static/header/IMG_3.png"/>
+							
+	<div class="heading1 right">Lorem Sit</div>
+	<div class="heading1 left">Lorem Sit</div>  
+	<div class="heading2 right">Lorem Sit more text</div> 
+	<div class="heading2 left">Lorem Sit more text</div> 		
+	
+</%def>
+
+<%def name="header2()">
+
+
+	<img style="float:left;margin-left:-57px;margin-right:40px; margin-top:8px; margin-bottom:-17px; min-height:376px;" src="/static/header/IMG_2.png"/>
+									
+	<div class="heading1 right">Lorem Sit</div>
+	<div class="heading1 left">Lorem Sit</div>  
+	<div class="heading2 right">Lorem Sit more</div> 
+	<div class="heading2 left">Lorem Sit more</div>
+
+</%def>
+
+<%def name="header3()">
+
+	<img style="float:left;margin-left:7px;margin-right:40px; margin-top:-34px; margin-bottom:-19px" src="/static/header/IMG_1.png"/>
+						
+		<div class="heading1 right">Lorem Sit</div>
+		<div class="heading1 left">Lorem Sit</div>  
+		<div class="heading2 right">Lorem Sit more text</div> 
+		<div class="heading2 left" >Lorem Sit more text</div>
+	
+</%def>
+
+<%def name="header4()">
+
+	<img style="float:left;margin-left:0px;margin-right:40px; margin-top:-22px" src="/static/header/IMG_5.png"/>
+					
+		<div class="heading1 right">Lorem Sit</div>
+		<div class="heading1 left">Lorem Sit</div>  
+		<div class="heading2 right">Lorem Sit and some</div> 
+		<div class="heading2 left">Lorem Sit more </div>
+
+</%def>
+
+<%def name="header5()">
+	
+	<img style="float:left;margin-left:0px;margin-right:40px; margin-top:-14px; margin-bottom:-19px" src="/static/header/IMG_6.png"/>
+								
+		<div class="heading1 right">Lorem </div>
+		<div class="heading1 left">Lorem </div>  
+		<div class="heading2 right">Lorem Sit more text</div> 
+		<div class="heading2 left">Lorem Sit more text</div>
+</%def>
+	

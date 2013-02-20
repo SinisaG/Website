@@ -1,0 +1,97 @@
+﻿<%inherit file="base.html" />
+<%namespace name="head" file="headers.html"/>
+
+<%block name="header">
+	<div class="paintheader">
+		<div style="background-image:url('/static/header/background.png'); background-repeat:no-repeat; position:relative;" class="container" >	
+				<div class="wrapper">				
+					<div class="navbar">
+						<a class="brand" href="/"> <img src="/static/header/Logo.png">	 </a>
+				  		<div class="navbar-inner">		
+							<ul class="nav pull-right">
+					  			<li class="${request.context.active('projects') or request.context.active('gymondo')}"><a href="/projects">Projects</a></li>
+					  			<li class="${request.context.active('clients')}"><a href="/clients">Clients</a></li>
+					  			<li class="${request.context.active('methodology')}"><a href="/methodology">Methodology</a></li>
+								<li class="${request.context.active('team')}"><a href="/team">Team</a></li>
+							</ul>
+			  			</div>
+					</div>
+					<div id="myCarousel" class="onTop carousel slide" style="overflow:visible"> 
+				  <!-- Carousel items -->
+				  		<div class="carousel-inner">
+						<div class="active item">${head.header1()}</div>
+						<div class="item">${head.header2()}</div>
+						<div class="item">${head.header3()}</div>
+						<div class="item">${head.header4()}</div>
+						<div class="item">${head.header5()}</div>
+				  		</div>
+					</div>
+		
+		 </div>
+			
+			<img style="position:absolute;top:232px;right:-528px;" src="/static/header/squares.png"/>
+		</div>	
+		<div style="background-color:white; height:25px;"></div>	
+	</div>
+</%block>
+
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel();
+	$(".moveDown").css("padding-bottom",$(window).height()/2);
+	$('#scrollbar1').tinyscrollbar();
+  });
+</script>
+
+
+
+
+<%block name="content">
+
+	${next.body()}
+	
+</%block>
+
+<%block name="footer">
+	<div class="container">
+			<div class="footer">
+				
+					<div class="ffirstlineelement"><a href="/">Home</a></div>
+					<div class="ffirstlineelement"><a href="/projects">Projects</a></div>
+					<div class="ffirstlineelement"><a href="/clients">Clients</a></div>
+					<div class="ffirstlineelement"><a href="/methodology">Methodology</a></div>
+					<div class="ffirstlineelement"><a href="/team">Team</a></div>
+					<div class="ffirstlineelement"><a href="#">About Us</a></div>
+					<div class="ffirstlineelement"><a href="#">Contact</a></div>
+					<div class="ffirstlineelement"><a href="#">Impressum</a></div>
+					<div class="ffirstlineelement"><a href="#">Newsletter</a></div>
+				
+					<div class="gradientH"></div>
+				
+				
+					<div class="flineelement"><a href ="https://maps.google.com/?q=landsberger+allee+117,+berlin,+germany"> <img class="bottom" src="/static/Icons/GPS.png"/>   Landsberger Allee 117, 10407 Berlin, Germany</a></div> <div class="flineelement"> <a href="tel:+49 30 99272540"> <img class="bottom" src="/static/Icons/Phone.png"/> +49 30 99272540</a></div>
+					<div class="flineelement"> <a href="mailto:enquiries@hackandcraft.com"> <img class="bottom" src="/static/Icons/mail.png"/>enquiries@hackandcraft.com </a></div>
+					 <a href="http://www.twitter.com/"><img class="bottom" src="/static/Icons/twitter.png"/></a>
+					 <a href="http://www.facebook.com/"><img class="bottom" src="/static/Icons/facebook.png"/></a> 
+					 <script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
+<a href="skype:hackandcraft?call"><img class="bottom" src="/static/Icons/skype.png"/> </a>
+					
+				
+				<div class="gradientH"></div>
+	
+				<div class="copyright"> &copy; 2013 <a href="/"> Hack&Craft GmbH </a> All rights reserved </div>
+
+			</div>
+
+				
+			
+								
+		</div>
+
+			
+	
+	</div>
+
+
+</%block>
+

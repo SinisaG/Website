@@ -1,0 +1,183 @@
+﻿<%inherit file="layout.html" />
+<div class="container">
+	<div class="wrapper">
+		<div class="indexHeadingsFirst">
+			<a href="/projects"> Projects </a>
+		</div>	
+
+		<div class="indexSubHeadings">
+			Here goes the subtittle
+		</div>
+
+		<div class="smallPrint right">
+			Everything we're proud of.
+		</div>
+
+
+		<div class="row" style="margin-left:0px";>
+			<div class="container-left">
+				<img class="giftCannonIndexPic" src="/static/index/GiftCannon.png"/>
+
+				<div class="projectHeading">
+					<a href="/projects/giftcannon#giftcannon"> GiftCannon </a>
+				</div>
+		
+				<div class="description">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis, lorem eu convallis malesuada, urna turpis. In sagittis, lorem eu convallis malesuada, urna turpis. </p>
+
+				</div>
+			</div>
+
+		
+			<div class="container-right">
+				<img class="gymondoIndexPic" src="/static/index/Gymondo.png"/>
+
+				<div class="projectHeading">
+					<a href="/projects/gymondo#gymondo">Gymondo </a>
+				</div>
+
+				<div class="description">
+				
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis, lorem eu convallis malesuada, urna turpis. In sagittis, lorem eu convallis malesuada, urna turpis. </p>
+
+				</div>
+			</div>
+		</div>
+	
+		<div class="indexHeadings">
+			<a href="/clients"> Clients</a>
+		</div>	
+
+		<div class="indexSubHeadings">
+			Here goes the subtittle
+		</div>
+
+		<div class="smallPrint right">
+			All our precious clients.
+		</div>
+
+		<div class="clientsContainerIndex">
+			
+			<div class="row" style="margin-left:0px;">
+				<div class="singleClientIndex">
+					<img class="imageClientPro7" src="/static/index/Logo_Pro7.png"/>
+					<div class="projectHeading">
+						ProSieben.de
+					</div>
+					<div class="descriptionClients">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis, lorem eu convallis malesuada, urna turpis. </p>
+					</div>
+				</div>
+
+				<div class="gradientV"></div>
+				
+				<div class="singleClientIndex">
+					<img class="imageClientRocket" src="/static/index/Logo_RocketInternet.png"/>
+					<div class="projectHeading">
+						RocketInternet.com
+					</div>
+					<div class="descriptionClients">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis, lorem eu convallis malesuada, urna turpis. </p>
+					</div>
+				</div>
+				
+				<div class="gradientV"></div>
+				<div class="singleClientIndex">
+					<img class="singleClientFriend" src="/static/index/Logo_FriendFund.png"/>
+					<div class="projectHeading">
+						FriendsFund.com
+					</div>
+					<div class="descriptionClients">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis, lorem eu convallis malesuada, urna turpis. </p>
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
+
+	
+		<div class="indexHeadings">
+			<a href="/methodology">Methodlogy</a>
+		</div>	
+
+		<div class="indexSubHeadings">
+			Here goes the subtittle
+		</div>
+
+		<div class="smallPrint right">
+			How we roll.
+		</div>
+
+		<div class="row" style="margin-left:0px">
+			<div style="margin-left:42px">
+				<div class="container-left" style="background-image:url('/static/index/Methodology.png');background-repeat:no-repeat;">
+
+					<div class="textMethodology1">
+
+						<div class="headingMethodology">24 Hour</div>
+						<div class="innerMethodology"> - I need</div>
+						<div class="innerMethodology"> - about 3</div>
+						<div class="innerMethodology"> lines</div>	
+					</div>
+
+					<div class="textMethodology2">
+					
+						<div class="headingMethodology">SPRINT = 1 WEEK</div>
+						<div class="innerMethodology"> - I need about</div>
+						<div class="innerMethodology"> - about 3 lines</div>
+						<div class="innerMethodology"> for test</div>	
+
+					</div>
+				
+				</div>
+			</div>
+			 <div class="container-right description" style="padding-top:100px;margin-right:-40px; margin-left:22px">
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis, lorem eu convallis malesuada, urna turpis convallis sem, mollis bibendum lectus neque non diam. Aliquam tincidunt iaculis elit eu luctus. Nam laoreet nibh eget nisl auctor id volutpat sem porttitor. Sed porttitor quam est. </p>
+
+
+			 </div>
+
+		</div>
+
+
+		<div class="indexHeadings">
+			<a href="/team">Our Team </a>
+		</div>	
+
+		<div class="indexSubHeadings">
+			Here goes the subtittle
+		</div>
+
+		<div class="smallPrint right">
+			Take a peak, we're very photogenic.
+		</div>
+		
+		<div class="row" style="margin-left:0px";> 
+			
+			<div class="container-left description">
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis, lorem eu convallis malesuada, urna turpis convallis sem, mollis bibendum lectus neque non diam. 				Aliquam tincidunt iaculis elit eu luctus. Nam laoreet nibh eget nisl auctor id volutpat sem porttitor. Sed porttitor quam est. </p>
+
+			
+				</div>
+
+			<div class="container-right">
+
+				<img class="imageTeamIndex" src="/static/index/Team.png"/>
+			</div>
+			
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
