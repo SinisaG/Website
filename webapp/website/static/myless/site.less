@@ -1,0 +1,50 @@
+@import "../bootstrap/bootstrap";
+@import "content";
+
+
+.methodology-chart {
+  position: relative;
+
+  .chart {
+    width: auto;
+    margin: 0px auto;
+    display: block;
+  }
+  .chart-text {
+    position: absolute;
+    .rotate(-5deg);
+    &.text-left {
+      top:  130px;
+      left:  100px;
+    }
+    &.text-right {
+      top: 220px;
+      left: 650px;
+      width: 320px;
+    }
+  }
+  .chart-heading {
+    font-family: 'Rock Salt', cursive;
+    font-size: 2em;
+    line-height: 2.5em;
+    color: @red;
+  }
+  .chart-label-text {
+    font-family: 'Rock Salt', cursive;
+    font-size: 1.2em;
+    line-height: 30px;
+    padding-left: 20px;
+  }
+
+  .textMethodology1M {
+    .rotate(-5deg);
+    float: left;
+    margin-left: 100px;
+    margin-top: -40px;
+  }
+  .textMethodology2M {
+    float: right;
+    .rotate(-5deg);
+    margin-top: 20px;
+  }
+}
