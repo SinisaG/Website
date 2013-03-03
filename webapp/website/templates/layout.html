@@ -10,14 +10,6 @@
                     <a class="brand" href="/"> <img src="/static/header/Logo.png"> </a>
 
                     <div class="navbar-inner">
-                        <ul class="nav pull-right">
-                            <li class="${request.context.active('projects') or request.context.active('gymondo')}"><a
-                                    href="/projects">Projects</a></li>
-                            <li class="${request.context.active('clients')}"><a href="/clients">Clients</a></li>
-                            <li class="${request.context.active('methodology')}"><a href="/methodology">Methodology</a>
-                            </li>
-                            <li class="${request.context.active('team')}"><a href="/team">Team</a></li>
-                        </ul>
                     </div>
                 </div>
                 <div id="myCarousel" class="onTop carousel slide" style="overflow:visible">
@@ -46,13 +38,6 @@
 <%block name="footer">
     <div class="container">
         <div class="footer">
-            <ul class="link-list">
-                <li class="ffirstlineelement"><a href="/">Home</a></li>
-                <li class="ffirstlineelement"><a href="/projects">Projects</a></li>
-                <li class="ffirstlineelement"><a href="/clients">Clients</a></li>
-                <li class="ffirstlineelement"><a href="/methodology">Methodology</a></li>
-                <li class="ffirstlineelement"><a href="/team">Team</a></li>
-            </ul>
 
             <div class="gradientH"></div>
             <div class="flineelement"><a href="https://maps.google.com/?q=Landsberger+Allee+117,+Berlin,+Germany"> <img

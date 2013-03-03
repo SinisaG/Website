@@ -1,0 +1,1 @@
+c:\Python27\Scripts\fab.exe -u www-data -i deploy_lilac -H lilac deploy:env=live
