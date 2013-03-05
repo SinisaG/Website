@@ -20,12 +20,13 @@ requires = [
     'simplejson',
     'dnspython',
     'turbomail',
-    'uuid'
+    'uuid',
+    'dogpile.cache'
     ]
 
-setup(name='Website',
+setup(name='hncweb',
       version='0.0',
-      description='Website',
+      description='hncweb',
       long_description=README + '\n\n' + CHANGES,
       classifiers=[
         "Programming Language :: Python",
@@ -42,9 +43,9 @@ setup(name='Website',
       zip_safe=False,
       install_requires=requires,
       tests_require=requires,
-      test_suite="website",
+      test_suite="hncweb",
       entry_points="""\
       [paste.app_factory]
-      main = website:main
+      main = hncweb:main
       """,
       )

@@ -12,3 +12,4 @@ simplejson
 dnspython
 turbomail
 uuid
+dogpile.cache

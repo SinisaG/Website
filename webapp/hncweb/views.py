@@ -4,13 +4,13 @@ from pyramid.response import Response
 dic={'projects':'', 'clients':'', 'methodology':'', 'team':''}
 
 class RootContext(object):
-	def __init__(self, request):
-		self.request=request
-	def active(self, route):
-		return "active" if route==self.request.matched_route.name else ""
+    static_prefix = '/static/'
+    def __init__(self, request):
+        self.request=request
+    def active(self, *route):
+        return "active" if self.request.matched_route.name in route else ""
 
 def includeme(config):
-    config.add_static_view('static', 'static', cache_max_age=3600)
     config.add_route('home', '/', factory=RootContext)
     config.add_route('projects', '/projects', factory=RootContext)
     config.add_route('clients', '/clients', factory=RootContext)
@@ -24,11 +24,11 @@ def includeme(config):
 @view_config(route_name='giftcannon', renderer='/projects/giftcannon.html')
 @view_config(route_name='friendfund', renderer='/projects/friendfund.html')
 @view_config(route_name='gymondo', renderer='/projects/gymondo.html')
-@view_config(route_name='team', renderer='team.html')
-@view_config(route_name='methodology', renderer='methodology.html')
-@view_config(route_name='clients', renderer='clients.html')
-@view_config(route_name='projects', renderer='projects.html')
-@view_config(route_name='home', renderer='index.html')
+@view_config(route_name='team', renderer='pages/team.html')
+@view_config(route_name='methodology', renderer='pages/methodology.html')
+@view_config(route_name='clients', renderer='pages/clients.html')
+@view_config(route_name='projects', renderer='pages/projects.html')
+@view_config(route_name='home', renderer='pages/index.html')
 def my_view(context, request):
-	return {}
+    return {}
 

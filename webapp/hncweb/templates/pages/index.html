@@ -1,6 +1,5 @@
 ﻿<%inherit file="layout.html" />
 <div class="container">
-
     <div class="row">
         <div class="span12">
             <div class="wrapper">
@@ -8,7 +7,8 @@
                 <div class="indexHeadingsFirst"><a href="#">About</a></div>
                 <div class="indexSubHeadings">We turn visions into reality</div>
                 <div class="smallPrint right">A full service development team</div>
-                <img class="imageAboutIndex" src="/static/index/About_Us.jpg"/>
+
+                <img class="imageAboutIndex" src="${STATIC_URL}img/index/About_Us.jpg?v=${VERSION_TOKEN}"/>
                 <div class="container-left description">
                     <p>Hack&Craft was founded to bring product visions to life. We are product engineers who believe that the key to a great product is close collaboration between project managers, designers, developers, branding experts and the client.</p>
                 </div>
@@ -19,8 +19,9 @@
                 <div class="indexHeadings"><a href="/projects">Projects</a></div>
                 <div class="indexSubHeadings">A marriage of innovation and experience</div>
                 <div class="smallPrint right">Things we’re proud of</div>
+
                 <div class="container-left">
-                    <img class="giftCannonIndexPic" src="/static/index/Projects_Friendfund.png"/>
+                    <img class="giftCannonIndexPic" src="${STATIC_URL}img/index/Projects_Friendfund.png?v=${VERSION_TOKEN}"/>
                     <div class="projectHeading">
                         <a href="/projects/giftcannon#giftcannon"> FriendFund </a>
                     </div>
@@ -29,7 +30,7 @@
                     </div>
                 </div>
                 <div class="container-right">
-                    <img class="gymondoIndexPic" src="/static/index/Gymondo.png"/>
+                    <img class="gymondoIndexPic" src="${STATIC_URL}img/index/Gymondo.png?v=${VERSION_TOKEN}"/>
                     <div class="projectHeading">
                         <a href="/projects/gymondo#gymondo">Gymondo</a>
                     </div>
@@ -44,28 +45,28 @@
                 <div class="clientsContainerIndex clearfix">
 
                     <div class="singleClientIndex">
-                        <img class="client-image" src="/static/clients/Logo_FriendFund.png"/>
-                        <img class="client-image" src="/static/clients/Logo_GreatAmericanDays.png"/>
-                        <img class="client-image" src="/static/clients/Logo_Zanox.png"/>
-                        <img class="client-image" src="/static/clients/Logo_Bookpar.png"/>
+                        <img class="client-image" src="${STATIC_URL}img/clients/Logo_FriendFund.png?v=${VERSION_TOKEN}"/>
+                        <img class="client-image" src="${STATIC_URL}img/clients/Logo_GreatAmericanDays.png?v=${VERSION_TOKEN}"/>
+                        <img class="client-image" src="${STATIC_URL}img/clients/Logo_Zanox.png?v=${VERSION_TOKEN}"/>
+                        <img class="client-image" src="${STATIC_URL}img/clients/Logo_Bookpar.png?v=${VERSION_TOKEN}"/>
                     </div>
 
                     <div class="gradientV index"></div>
 
                     <div class="singleClientIndex">
-                        <img class="client-image" src="/static/clients/Logo_Gymondo.png"/>
-                        <img class="client-image" src="/static/clients/Logo_RocketInternet.png"/>
-                        <img class="client-image" src="/static/clients/Logo_GiftCannon.png"/>
-                        <img class="client-image" src="/static/clients/Logo_Doggity.png"/>
+                        <img class="client-image" src="${STATIC_URL}img/clients/Logo_Gymondo.png?v=${VERSION_TOKEN}"/>
+                        <img class="client-image" src="${STATIC_URL}img/clients/Logo_RocketInternet.png?v=${VERSION_TOKEN}"/>
+                        <img class="client-image" src="${STATIC_URL}img/clients/Logo_GiftCannon.png?v=${VERSION_TOKEN}"/>
+                        <img class="client-image" src="${STATIC_URL}img/clients/Logo_Doggity.png?v=${VERSION_TOKEN}"/>
                     </div>
 
                     <div class="gradientV index"></div>
 
                     <div class="singleClientIndex">
-                        <img class="client-image" src="/static/clients/Logo_Pro7.png"/>
-                        <img class="client-image" src="/static/clients/Logo_FoundFair.png"/>
-                        <img class="client-image" src="/static/clients/Logo_Caissa.png"/>
-                        <img class="client-image" src="/static/clients/Logo_SevenVentures.png"/>
+                        <img class="client-image" src="${STATIC_URL}img/clients/Logo_Pro7.png?v=${VERSION_TOKEN}"/>
+                        <img class="client-image" src="${STATIC_URL}img/clients/Logo_FoundFair.png?v=${VERSION_TOKEN}"/>
+                        <img class="client-image" src="${STATIC_URL}img/clients/Logo_Caissa.png?v=${VERSION_TOKEN}"/>
+                        <img class="client-image" src="${STATIC_URL}img/clients/Logo_SevenVentures.png?v=${VERSION_TOKEN}"/>
                     </div>
                 </div>
 
@@ -100,7 +101,7 @@
                     <p>The difference between success and failure of any product is the experience and passion of the people who build it. The Hack&Craft team won’t just idly work on your project on a nine to five basis, we will treat it like our own. We value our work as much as we value our clients, and we have experience in solving the hardest tech problems in the book. Nobody from this office will ever tell you we can’t move forward without a custom CMS written in Haskell.</p>
                 </div>
                 <div class="container-right">
-                    <img class="imageTeamIndex" src="/static/index/Team.png"/>
+                    <img class="imageTeamIndex" src="${STATIC_URL}img/index/Team.png?v=${VERSION_TOKEN}"/>
                 </div>
             </div>
         </div>

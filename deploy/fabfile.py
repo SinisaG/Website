@@ -16,7 +16,7 @@ Style = namedtuple("Style", ["list", "hasBuster"])
 
 PROJECTNAME="hnc_website"
 SUBSITES = [
-    SubSite(location = '.', scripts=[], styles=Style([], False))
+    SubSite(location = '.', scripts=['libs/bootstrap.js', 'setup.js'], styles=Style(['site.less'], False))
   ]
 PROCESS_GROUPS = ['p1']
 CLEAN_SESSIONS = False
@@ -96,22 +96,6 @@ def build_statics(env, version):
                 run("~/node_modules/less/bin/lessc {project}/{subsite}/static/less/{stylesheet} --yui-compress {project}/{subsite}/static/css/{outname}.min.css".format(project=PROJECTNAME, subsite=loc, stylesheet=stylesheet, outname = stylesheet.rsplit(".")[0]))
 
 
-        if not files.exists("{project}/static/scripts/build/".format(project=PROJECTNAME)):
-            run("mkdir -p {project}/static/scripts/build/".format(project=PROJECTNAME))
-        run("java -jar ~/resources/compiler.jar --compilation_level SIMPLE_OPTIMIZATIONS \
-            --js \
-            {project}/static/scripts/libs/modernizr.js \
-            {project}/static/scripts/libs/bootstrap.js \
-            {project}/static/scripts/libs/JSON.js \
-            {project}/static/scripts/libs/store.js \
-            {project}/static/scripts/libs/underscore.js \
-            {project}/static/scripts/libs/backbone.js  \
-            {project}/static/scripts/libs/jquery.validate.js \
-            {project}/static/scripts/libs/jquery.placeholder.js \
-            {project}/static/scripts/libs/require.js \
-            {project}/static/scripts/setup.js \
-            --warning_level QUIET --js_output_file {project}/static/scripts/build/libs.js".format(project=PROJECTNAME))
-
         for subsite in SUBSITES:
             if not files.exists("{project}/{subsite}/static/scripts/build/".format(project=PROJECTNAME, subsite=subsite.location)):
                 run("mkdir -p {project}/{subsite}/static/scripts/build/".format(project=PROJECTNAME, subsite=subsite.location))
@@ -147,5 +131,5 @@ def deploy(env):
   VERSION_TOKEN = datetime.now().strftime("%Y%m%d-%H%M%S-%f")[:-3]
   update(env)
   build(env, VERSION_TOKEN)
-  #build_statics(env, VERSION_TOKEN)
+  build_statics(env, VERSION_TOKEN)
   switch(env, VERSION_TOKEN)

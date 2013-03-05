@@ -1,0 +1,59 @@
+/* ======================== HEADER ====================== */
+.paintheader {
+  background-color: black;
+  overflow: hidden;
+  > .container {
+    background-image('/static/header/background.png');
+    background-repeat:no-repeat;
+    position:relative;
+  }
+}
+.slider-fake-padding {
+  background-color:white; height:25px;
+}
+
+
+.nav  > li {display: inline;}
+.nav > li > a:hover {
+  color: @red;
+  background-color: white;
+}
+.nav li.active a {
+  color: @red;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 48px;
+}
+
+/* ======================== FOOTER ====================== */
+
+.flineelement {
+  display: inline;
+  padding-left: 20px;
+}
+
+.ffirstlineelement {
+  display: inline;
+  padding-right: 20px;
+  > a {
+    text-decoration: none;
+    color: @red;
+  }
+}
+
+
+.footer {
+  font-size: 12px;
+  text-align: center;
+  margin-top:100px;
+  margin-bottom:25px;
+}
+
+img.bottom {
+
+  vertical-align: text-bottom;
+  padding-left: 20px;
+  padding-right: 1em;
+
+}
