@@ -9,8 +9,6 @@
                     <a class="brand" href="${request.fwd_url("home")}"> <img src="${STATIC_URL}img/header/Logo.png"> </a>
                     <div class="navbar-inner">
                         <ul class="nav pull-right">
-                            <li class="${request.context.active('projects', 'gymondo')}"><a href="${request.fwd_url("projects")}">Projects</a></li>
-                            <li class="${request.context.active('clients')}"><a href="${request.fwd_url("clients")}">Clients</a></li>
                             <li class="${request.context.active('methodology')}"><a href="${request.fwd_url("methodology")}">Methodology</a></li>
                             <li class="${request.context.active('team')}"><a href="${request.fwd_url("team")}">Team</a></li>
                         </ul>
@@ -43,8 +41,6 @@
         <div class="footer">
             <ul class="link-list">
                 <li class="ffirstlineelement"><a href="${request.fwd_url("home")}">Home</a></li>
-                <li class="ffirstlineelement"><a href="${request.fwd_url("projects")}">Projects</a></li>
-                <li class="ffirstlineelement"><a href="${request.fwd_url("clients")}">Clients</a></li>
                 <li class="ffirstlineelement"><a href="${request.fwd_url("methodology")}">Methodology</a></li>
                 <li class="ffirstlineelement"><a href="${request.fwd_url("team")}">Team</a></li>
             </ul>
