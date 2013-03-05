@@ -14,7 +14,7 @@ Style = namedtuple("Style", ["list", "hasBuster"])
 
 ############## CONFIG #########################
 
-PROJECTNAME="hnc_website"
+PROJECTNAME="hncweb"
 SUBSITES = [
     SubSite(location = '.', scripts=['libs/bootstrap.js', 'setup.js'], styles=Style(['site.less'], False))
   ]
