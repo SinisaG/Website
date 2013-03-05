@@ -1,4 +1,4 @@
-﻿<%inherit file="layout.html" />
+﻿<%inherit file="../layout.html" />
 <div class="container">
     <div class="row">
         <div class="span12">
@@ -16,30 +16,26 @@
                     <p>The Hack&Craft team loves to approach problems from a fresh angle, look for innovative solutions and push the envelope of development and design no matter the device or platform.</p>
                 </div>
 
-                <div class="indexHeadings"><a href="/projects">Projects</a></div>
+                <div class="indexHeadings">Projects</div>
                 <div class="indexSubHeadings">A marriage of innovation and experience</div>
                 <div class="smallPrint right">Things we’re proud of</div>
 
                 <div class="container-left">
                     <img class="giftCannonIndexPic" src="${STATIC_URL}img/index/Projects_Friendfund.png?v=${VERSION_TOKEN}"/>
-                    <div class="projectHeading">
-                        <a href="/projects/giftcannon#giftcannon"> FriendFund </a>
-                    </div>
+                    <div class="projectHeading"> FriendFund </div>
                     <div class="description">
                         <p> Friendfund was one of the first crowdfunding platforms in Europe. Targeted at friends, families and communities, Friendfund is an established, trustworthy and effective crowdfunding platform.  </p>
                     </div>
                 </div>
                 <div class="container-right">
                     <img class="gymondoIndexPic" src="${STATIC_URL}img/index/Gymondo.png?v=${VERSION_TOKEN}"/>
-                    <div class="projectHeading">
-                        <a href="/projects/gymondo#gymondo">Gymondo</a>
-                    </div>
+                    <div class="projectHeading"> Gymondo </div>
                     <div class="description">
                         <p>An online personal fitness trainer at your disposal.  Watch workout videos, get professional advice on your diet and exercise plan, and track your progress all the way to success.</p>
                     </div>
                 </div>
 
-                <div class="indexHeadings"><a href="/clients">Clients</a></div>
+                <div class="indexHeadings">Clients</div>
                 <div class="indexSubHeadings">We like our clients </div>
                 <div class="smallPrint right">Cross-platform innovation</div>
                 <div class="clientsContainerIndex clearfix">
@@ -57,7 +53,7 @@
                         <img class="client-image" src="${STATIC_URL}img/clients/Logo_Gymondo.png?v=${VERSION_TOKEN}"/>
                         <img class="client-image" src="${STATIC_URL}img/clients/Logo_RocketInternet.png?v=${VERSION_TOKEN}"/>
                         <img class="client-image" src="${STATIC_URL}img/clients/Logo_GiftCannon.png?v=${VERSION_TOKEN}"/>
-                        <img class="client-image" src="${STATIC_URL}img/clients/Logo_Doggity.png?v=${VERSION_TOKEN}"/>
+                        <img class="client-image" src="${STATIC_URL}img/clients/Logo_Ergo.png?v=${VERSION_TOKEN}"/>
                     </div>
 
                     <div class="gradientV index"></div>
@@ -70,11 +66,11 @@
                     </div>
                 </div>
 
-                <div class="indexHeadings"><a href="/methodology">Project Management</a></div>
+                <div class="indexHeadings"><a href="${request.fwd_url("methodology")}">Project Management</a></div>
                 <div class="indexSubHeadings">Agile and Structured</div>
                 <div class="smallPrint right">How we work</div>
                 <div style="margin-left:42px">
-                    <div class="container-left" style="background-image:url('/static/index/Methodology.png');background-repeat:no-repeat;">
+                    <div class="container-left mini-methodology chart">
                         <div class="textMethodology1">
                             <div class="headingMethodology">24 Hours</div>
                             <div class="innerMethodology"> - You test the<br/>product</div>
@@ -89,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-right description" style="padding-top:100px;margin-right:-40px; margin-left:22px">
+                <div class="container-right mini-methodology description">
                     <p>We are one of the fastest adaptable teams in the business. While other development teams set rigorous plans that leave no room for change, we believe that true innovation comes only from agility.  We work on a week to week basis which allows us to add and remove features as we go along. This shortens the work process and lowers the cost.</p>
                 </div>
 

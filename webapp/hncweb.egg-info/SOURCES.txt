@@ -6,6 +6,9 @@ development.ini
 live.ini
 setup.cfg
 setup.py
+hncweb/__init__.py
+hncweb/tests.py
+hncweb/views.py
 hncweb.egg-info/PKG-INFO
 hncweb.egg-info/SOURCES.txt
 hncweb.egg-info/dependency_links.txt
@@ -13,9 +16,6 @@ hncweb.egg-info/entry_points.txt
 hncweb.egg-info/not-zip-safe
 hncweb.egg-info/requires.txt
 hncweb.egg-info/top_level.txt
-hncweb/__init__.py
-hncweb/tests.py
-hncweb/views.py
 hncweb/lib/__init__.py
 hncweb/lib/globals.py
 hncweb/lib/request.py
