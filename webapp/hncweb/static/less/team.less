@@ -1,23 +1,42 @@
-.team-wrapper {
-  overflow-y: visible;
-  overflow-x: scroll;
+.team-legend {
+  width: auto;
+  overflow-x:scroll;
+  -webkit-overflow-scrolling: touch;
+  .team-playlist {
+    #gradient > .vertical-three-colors(#e7e8e9, darken(#e7e8e9, 10%), 50%, #e7e8e9);
+    .clearfix;
+  }
+  overflow-y: hidden;
   .team-member {
-    width: 400px;
-    padding: 30px;
-    float:left;
-    >.picture {
-      width: 80%;
-      margin: 0 10%;
-    }
-  }
-  .team-scroller {
-    margin-left:-30px;
-    .transition(margin-left .3s ease-in-out);
-  }
-  .member-section {
-    background:  rgb(231, 232, 233);
     background: #e7e8e9;
-    margin: 15px -30px -30px;
+    margin: 0 1px 0 1px;
     padding: 15px 40px 30px;
+    width: 300px;
+    float:left;
   }
+}
+
+.coverflow{
+  width: 100%;
+  height: 520px;
+  margin-top: 60px;
+  -webkit-perspective: 1000px;
+     -moz-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+}
+.coverflow .flowItem{
+  position:absolute;
+  height: 451px;
+  width: 300px;
+  left:50%;
+  margin-left:-150px;
+  top: 0;
+  cursor: pointer;
+  z-index: 10;
+  .transition(all .3s ease-in-out);
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(90%,rgba(255,255,255,0)), color-stop(95%,rgba(255,255,255,0.2)), color-stop(100%,rgba(255,255,255,.8)));
 }
