@@ -1,4 +1,70 @@
 <%inherit file="../layout.html" />
 
 
-team
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <div class="indexHeadingsFirst"><a href="${request.fwd_url("team")}">Our Team</a></div>
+            <div class="indexSubHeadings">We are not “coders”</div>
+
+
+            <div class="team-wrapper">
+                <div class="team-scroller" style="width:${6*460}px">
+                    ${self.buildMember("/andreas.jpg", "Andreas Kaergel", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
+                    ${self.buildMember("/jaka.jpg", "Jaka Krevelj", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
+                    ${self.buildMember("/harry.jpg", "Harry McCarney", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
+                    ${self.buildMember("/sinisa.jpg", "Sinisa Grubor", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
+                    ${self.buildMember("/lucy.jpg", "Lucy Natek", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
+                    ${self.buildMember("/martin.jpg", "Martin Peschke", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<%def name="buildMember(pic, name, subtitle, text)">
+    <div class="team-member">
+        <img src="${STATIC_URL}img/team/${pic|n}" class="picture"/>
+        <div class="member-section">
+            <h3 class="highlight">${name|n}</h3>
+            <h5>${subtitle|n}</h5>
+            <div class="text">
+                ${text|n}
+            </div>
+        </div>
+    </div>
+</%def>
+
+<%block name="scripts">
+<script>
+    $(function(){
+        var section = $(".team-scroller"), isHover= false, scrollTop = $(window).scrollTop(), lastScrollTop = scrollTop, left = -30;
+
+        $(window).on({scroll:function (e){
+            scrollTop = $(window).scrollTop();
+            if(isHover){
+                if(scrollTop > lastScrollTop){
+                    left -= 30;
+                } else {
+                    left += 30;
+                }
+                section.scrollLeft(left);
+                e.preventDefault();
+                e.stopPropagation();
+                return false;
+            }
+            lastScrollTop = scrollTop;
+        }});
+        section.on({mouseenter: function(){
+            isHover = true;
+        }, mouseout: function(){
+            isHover = false;
+        }})
+    });
+</script>
+</%block>
