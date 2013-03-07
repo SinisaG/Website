@@ -5,11 +5,13 @@
 
 .carousel {
   position: relative;
+  margin-bottom: @baseLineHeight;
   line-height: 1;
-
 }
 
 .carousel-inner {
+  overflow: hidden;
+  width: 100%;
   position: relative;
 }
 
@@ -18,13 +20,14 @@
   > .item {
     display: none;
     position: relative;
-    .transition(.3s ease-in-out all);
-  }
+    .transition(.3s ease-in-out left);
 
   // Account for jankitude on images
-  > .item > img {
-    display: block;
-    line-height: 1;
+    > img,
+    > a > img {
+      display: block;
+      line-height: 1;
+    }
   }
 
   > .active,
@@ -33,37 +36,34 @@
 
   > .active {
     left: 0;
-	.opacity(100);
-	 width: 100%;
   }
 
   > .next,
   > .prev {
     position: absolute;
     top: 0;
+    width: 100%;
   }
 
   > .next {
     left: 100%;
-	width:100%;
-	.opacity(0);
   }
   > .prev {
     left: -100%;
   }
-  > .next.left{ 
-	width: 100%;}
+  > .next.left,
   > .prev.right {
     left: 0;
+    text-align: left;
   }
 
   > .active.left {
     left: -100%;
-	.opacity(0);
-	
+    text-align: left;
   }
   > .active.right {
     left: 100%;
+    text-align: left;
   }
 
 }
@@ -74,7 +74,7 @@
 .carousel-control {
   position: absolute;
   top: 40%;
-  left: 15px;
+  left: -60px;
   width: 40px;
   height: 40px;
   margin-top: -20px;
@@ -88,27 +88,61 @@
   .border-radius(23px);
   .opacity(50);
 
-  // we can't have this transition here
-  // because webkit cancels the carousel
-  // animation if you trip this while
-  // in the middle of another animation
-  // ;_;
-  // .transition(opacity .2s linear);
+  display: block;
+  text-indent: 10px;
+  line-height: 24px;
 
-  // Reposition the right one
+// we can't have this transition here
+// because webkit cancels the carousel
+// animation if you trip this while
+// in the middle of another animation
+// ;_;
+// .transition(opacity .2s linear);
+
+// Reposition the right one
   &.right {
     left: auto;
-    right: 15px;
+    right: -60px;
+
+    display: block;
+    text-indent: -5px;
+    line-height: 24px;
   }
 
-  // Hover state
-  &:hover {
+// Hover/focus state
+  &:hover,
+  &:focus {
     color: @white;
     text-decoration: none;
     .opacity(90);
   }
 }
 
+// Carousel indicator pips
+// -----------------------------
+.carousel-indicators {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 5;
+  margin: 0;
+  list-style: none;
+
+  li {
+    display: block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    text-indent: -999px;
+    background-color: #ccc;
+    background-color: rgba(255,255,255,.25);
+    border-radius: 5px;
+  }
+  .active {
+    background-color: #fff;
+  }
+}
 
 // Caption for text below images
 // -----------------------------

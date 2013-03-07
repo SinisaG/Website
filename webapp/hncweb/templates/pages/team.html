@@ -9,12 +9,12 @@
 
             <div class="team-wrapper">
                 <div class="team-scroller coverflow">
-                    <div class="flowItem"><img src="${STATIC_URL}img/team/martin.jpg" class="picture"/></div>
-                    <div class="flowItem"><img src="${STATIC_URL}img/team/andreas.jpg" class="picture"/></div>
-                    <div class="flowItem"><img src="${STATIC_URL}img/team/jaka.jpg" class="picture"/></div>
-                    <div class="flowItem"><img src="${STATIC_URL}img/team/harry.jpg" class="picture"/></div>
-                    <div class="flowItem"><img src="${STATIC_URL}img/team/sinisa.jpg" class="picture"/></div>
-                    <div class="flowItem"><img src="${STATIC_URL}img/team/lucy.jpg" class="picture"/></div>
+                    <div class="flowItem" data-slide="0"><img src="${STATIC_URL}img/team/martin.jpg" class="picture"/></div>
+                    <div class="flowItem" data-slide="1"><img src="${STATIC_URL}img/team/lucy.jpg" class="picture"/></div>
+                    <div class="flowItem" data-slide="2"><img src="${STATIC_URL}img/team/sinisa.jpg" class="picture"/></div>
+                    <div class="flowItem" data-slide="3"><img src="${STATIC_URL}img/team/harry.jpg" class="picture"/></div>
+                    <div class="flowItem" data-slide="4"><img src="${STATIC_URL}img/team/jaka.jpg" class="picture"/></div>
+                    <div class="flowItem" data-slide="5"><img src="${STATIC_URL}img/team/andreas.jpg" class="picture"/></div>
                 </div>
             </div>
             <div id="slider-wrap">
@@ -22,13 +22,30 @@
             </div>
 
             <div class="team-legend">
-                <div class="team-playlist" style="width:${6*382}px;">
-                    ${self.buildMember("/martin.jpg", "Martin Peschke", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
-                    ${self.buildMember("/andreas.jpg", "Andreas Kaergel", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
-                    ${self.buildMember("/jaka.jpg", "Jaka Krevelj", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
-                    ${self.buildMember("/harry.jpg", "Harry McCarney", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum", True)}
-                    ${self.buildMember("/sinisa.jpg", "Sinisa Grubor", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
-                    ${self.buildMember("/lucy.jpg", "Lucy Natek", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
+                <div id="myCarousel" class="carousel slide">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                    </ol>
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        ${self.buildMember("/martin.jpg", "Martin Peschke", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
+                        ${self.buildMember("/lucy.jpg", "Lucy Natek", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
+                        ${self.buildMember("/sinisa.jpg", "Sinisa Grubor", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
+                        ${self.buildMember("/harry.jpg", "Harry McCarney", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum", True)}
+                        ${self.buildMember("/jaka.jpg", "Jaka Krevelj", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
+                        ${self.buildMember("/andreas.jpg", "Andreas Kaergel", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
+                    </div>
+                    <!-- Carousel nav -->
+                    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                </div>
+
+                <div class="team-playlist">
                 </div>
             </div>
             <br/>
@@ -50,12 +67,14 @@
 
 
 
-<%def name="buildMember(pic, name, subtitle, text, center = False)">
-    <div class="team-member ${'center-piece' if center else ''}">
-        <h3 class="highlight">${name|n}</h3>
-        <h5>${subtitle|n}</h5>
-        <div class="text">
-            ${text|n}
+<%def name="buildMember(pic, name, subtitle, text, active = False)">
+    <div class="item  ${'active' if active else ''}">
+        <div class="team-member">
+            <h3 class="highlight">${name|n}</h3>
+            <h5>${subtitle|n}</h5>
+            <div class="text">
+                ${text|n}
+            </div>
         </div>
     </div>
 </%def>
@@ -63,56 +82,50 @@
 <%block name="scripts">
     <script type="text/javascript">
         $(function(){
-            var pW = $(".center-piece").width(), bO = $(".team-legend").offset().left, bW = $(".team-legend").width(), items = $(".coverflow").children(), curItem = 3, lastItem;
-            transformCovers(items.eq(curItem));
-
+            var items = $(".coverflow").children();
+            transformCovers(3);
             $('.coverflow').on('click','.flowItem:not(.selected)',function(){
-                transformCovers($(this));
+                var idx = parseInt($(this).data("slide"), 10);
+                transformCovers(idx);
+                $("#myCarousel").carousel(idx);
             });
-            $(".team-legend").scrollLeft($(".center-piece").offset().left - bW/2 - bO + pW/2);
+            $("#myCarousel").on({slide: function(e){
+                transformCovers($(e.relatedTarget).index());
+            }});
 
-            $(".team-legend").on({scroll: function(e){
-                var sl = $(this).scrollLeft()*1.25;
-                if(sl<100)
-                    curItem = 0
-                else if(sl > (items.length-1)*pW)
-                    curItem = items.length
-                else
-                    curItem = Math.round(sl/pW);
-                if(curItem != lastItem)transformCovers(items.eq(curItem));
-                lastItem = curItem;
-            }})
+            function transformCovers(idx) {
+                var centerItem = items.filter('[data-slide='+idx+']');
+                if(!centerItem.hasClass('selected')){
+                    var leftItems = centerItem.prevAll('.flowItem');
+                    var rightItems = centerItem.nextAll('.flowItem');
+                    if(Math.abs(leftItems.length - rightItems.length) > 1){
+                        if(leftItems.length < rightItems.length){
+                            if(!leftItems.length)leftItems = centerItem;
+                            leftItems.before(rightItems.last().remove());
+                        } else {
+                            if(!rightItems.length)rightItems = centerItem;
+                            rightItems.after(leftItems.last().remove());
+                        }
+                        leftItems = centerItem.prevAll('.flowItem');
+                        rightItems = centerItem.nextAll('.flowItem');
+                    }
 
+                    var transform_vals = "translateX(0px) rotateY(0deg) translateZ(0) scale(1,1)";
+                    centerItem.css({"transform": transform_vals});
 
+                    leftItems.each(function(i){
+                        var transform_vals = "translateX("+(i*-100)+"px) rotateY(70deg) translateZ(-200px) scale(.8,.8)";
+                        $(this).css({"transform": transform_vals, zIndex:2});
+                    });
+
+                    rightItems.each(function(i){
+                        var transform_vals = "translateX("+(i*100)+"px) rotateY(-70deg) translateZ(-200px) scale(.8,.8)";
+                        $(this).css({"transform": transform_vals, zIndex:2});
+                    });
+
+                    centerItem.addClass('selected').siblings('.selected').removeClass('selected');
+                }
+            };
         });
-
-        function transformCovers(centerItem,callback) {
-            if(typeof(centerItem)=="undefined"){
-                var items = $('.coverflow .flowItem');
-                centerItem = items.eq(parseInt(items.length/2));
-            }
-
-            if(!centerItem.hasClass('selected')){
-                var leftItems = centerItem.prevAll('.flowItem');
-                var rightItems = centerItem.nextAll('.flowItem');
-
-                var transform_vals = "translateX(0px) rotateY(0deg) translateZ(0) scale(1,1)";
-                centerItem.css({"transform": transform_vals});
-
-                leftItems.each(function(i){
-                    var itemdelta = i;
-                    var transform_vals = "translateX("+((itemdelta)*-100)+"px) rotateY(70deg) translateZ(-200px) scale(.8,.8)";
-                    $(this).css({"transform": transform_vals});
-                });
-
-                rightItems.each(function(i){
-                    var itemdelta = i;
-                    var transform_vals = "translateX("+((itemdelta)*100)+"px) rotateY(-70deg) translateZ(-200px) scale(.8,.8)";
-                    $(this).css({"transform": transform_vals});
-                });
-
-                centerItem.addClass('selected').siblings('.selected').removeClass('selected');
-            }
-        };
     </script>
 </%block>
