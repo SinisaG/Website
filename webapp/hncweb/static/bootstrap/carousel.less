@@ -5,12 +5,10 @@
 
 .carousel {
   position: relative;
-  margin-bottom: @baseLineHeight;
   line-height: 1;
 }
 
 .carousel-inner {
-  overflow: hidden;
   width: 100%;
   position: relative;
 }
@@ -122,8 +120,8 @@
 // -----------------------------
 .carousel-indicators {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: -15px;
+  right: 50%;
   z-index: 5;
   margin: 0;
   list-style: none;
@@ -131,16 +129,16 @@
   li {
     display: block;
     float: left;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     margin-left: 5px;
     text-indent: -999px;
     background-color: #ccc;
-    background-color: rgba(255,255,255,.25);
+    background-color: rgba(0,0,0,.25);
     border-radius: 5px;
   }
   .active {
-    background-color: #fff;
+    background-color: #333;
   }
 }
 
