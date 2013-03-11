@@ -4,61 +4,50 @@
 <div class="container">
     <div class="row">
         <div class="span12">
-            <div class="indexHeadingsFirst"><a href="${request.fwd_url("team")}">Our Team</a></div>
-            <div class="indexSubHeadings">We are not “coders”</div>
+            <div class="wrapper">
+                <div class="indexHeadingsFirst"><a href="${request.fwd_url("team")}">Our Team</a></div>
+                <div class="indexSubHeadings">360° expertise</div>
 
-            <div class="team-wrapper">
-                <div class="team-scroller coverflow">
-                    <div class="flowItem" data-slide="0"><img src="${STATIC_URL}img/team/martin.jpg" class="picture"/></div>
-                    <div class="flowItem" data-slide="1"><img src="${STATIC_URL}img/team/lucy.jpg" class="picture"/></div>
-                    <div class="flowItem" data-slide="2"><img src="${STATIC_URL}img/team/sinisa.jpg" class="picture"/></div>
-                    <div class="flowItem" data-slide="3"><img src="${STATIC_URL}img/team/harry.jpg" class="picture"/></div>
-                    <div class="flowItem" data-slide="4"><img src="${STATIC_URL}img/team/jaka.jpg" class="picture"/></div>
-                    <div class="flowItem" data-slide="5"><img src="${STATIC_URL}img/team/andreas.jpg" class="picture"/></div>
-                </div>
-            </div>
-            <div id="slider-wrap">
-                <div id="slider-vertical"></div>
-            </div>
-
-            <div class="team-legend">
-                <div id="myCarousel" class="carousel slide">
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                        <li data-target="#myCarousel" data-slide-to="3" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="4"></li>
-                        <li data-target="#myCarousel" data-slide-to="5"></li>
-                    </ol>
-                    <!-- Carousel items -->
-                    <div class="carousel-inner">
-                        ${self.buildMember("/martin.jpg", "Martin Peschke", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
-                        ${self.buildMember("/lucy.jpg", "Lucy Natek", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
-                        ${self.buildMember("/sinisa.jpg", "Sinisa Grubor", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
-                        ${self.buildMember("/harry.jpg", "Harry McCarney", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum", True)}
-                        ${self.buildMember("/jaka.jpg", "Jaka Krevelj", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
-                        ${self.buildMember("/andreas.jpg", "Andreas Kaergel", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
+                <div class="team-wrapper">
+                    <div class="team-scroller coverflow">
+                        <div class="flowItem" data-slide="0"><img src="${STATIC_URL}img/team/martin.jpg" class="picture"/></div>
+                        <div class="flowItem" data-slide="1"><img src="${STATIC_URL}img/team/lucy.jpg" class="picture"/></div>
+                        <div class="flowItem" data-slide="2"><img src="${STATIC_URL}img/team/sinisa.jpg" class="picture"/></div>
+                        <div class="flowItem" data-slide="3"><img src="${STATIC_URL}img/team/harry.jpg" class="picture"/></div>
+                        <div class="flowItem" data-slide="4"><img src="${STATIC_URL}img/team/jaka.jpg" class="picture"/></div>
+                        <div class="flowItem" data-slide="5"><img src="${STATIC_URL}img/team/andreas.jpg" class="picture"/></div>
                     </div>
-                    <!-- Carousel nav -->
-                    <a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
-                    <a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
+                </div>
+                <div id="slider-wrap">
+                    <div id="slider-vertical"></div>
                 </div>
 
-                <div class="team-playlist">
+                <div class="team-legend">
+                    <div id="team-carousel" class="carousel slide">
+                        <div class="carousel-inner">
+                            ${self.buildMember("/martin.jpg", "Martin Peschke", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
+                            ${self.buildMember("/lucy.jpg", "Lucy Natek", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
+                            ${self.buildMember("/sinisa.jpg", "Sinisa Grubor", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
+                            ${self.buildMember("/harry.jpg", "Harry McCarney", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum", True)}
+                            ${self.buildMember("/jaka.jpg", "Jaka Krevelj", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
+                            ${self.buildMember("/andreas.jpg", "Andreas Kaergel", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
+                        </div>
+                    </div>
+                    <div class="team-playlist">
+                    </div>
                 </div>
-            </div>
-            <br/>
-            <br/>
-            <br/>
-            <div class="container-left">
-                <div class="description">
-                    The difference between success and failure of any product is the experience and passion of the people who build it. The Hack&Craft team won’t just idly work on your project on a nine to five basis, we will treat it like our own.
+                <br/>
+                <br/>
+                <br/>
+                <div class="container-left">
+                    <div class="description">
+                        The difference between success and failure of any product is the experience and passion of the people who build it. The Hack&Craft team won’t just idly work on your project on a nine to five basis, we will treat it like our own.
+                    </div>
                 </div>
-            </div>
-            <div class="container-right">
-                <div class="description">
-                    We value our work as much as we value our clients, and we have experience in solving the hardest tech problems in the book. Nobody from this office will ever tell you we can’t move forward without a custom CMS written in Haskell.
+                <div class="container-right">
+                    <div class="description">
+                        We value our work as much as we value our clients, and we have experience in solving the hardest tech problems in the book. Nobody from this office will ever tell you we can’t move forward without a custom CMS written in Haskell.
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,70 +69,10 @@
 </%def>
 
 <%block name="scripts">
+    <script type="text/javascript" src="${STATIC_URL}scripts/team.js"></script>
     <script type="text/javascript">
         $(function(){
-            var items = $(".coverflow").children()
-            , len = items.length
-            , supportsTransitions = function() {
-                var b = document.body || document.documentElement, s = b.style, p = 'transition', v;
-                if(typeof s[p] == 'string') {return true; }
-                v = ['Moz', 'Webkit', 'Khtml', 'O', 'ms'],
-                        p = p.charAt(0).toUpperCase() + p.substr(1);
-                for(var i=0; i<v.length; i++)if(typeof s[v[i] + p] == 'string'){ return true; }
-                return false;
-            }
-            , supportT = supportsTransitions()
-            , positionTrans = function(centerItem, lI, rI){
-                var pos, transform_vals = "translateX(0px) rotateY(0deg) translateZ(0) scale(1,1)";
-                centerItem.css({"transform": transform_vals});
-                for(pos=0;pos<lI.length;pos++){
-                    transform_vals = "translateX("+(pos*-100)+"px) rotateY(70deg) translateZ(-"+(200+pos)+"px) scale(.8,.8)";
-                    items.eq(lI[pos]).css({"transform": transform_vals, zIndex:2});
-                }
-                for(pos=0;pos<rI.length;pos++){
-                    transform_vals = "translateX("+(pos*100)+"px) rotateY(-70deg) translateZ(-"+(200+pos)+"px) scale(.8,.8)";
-                    items.eq(rI[pos]).css({"transform": transform_vals, zIndex:2});
-                }
-            }
-            , positionFix = function(centerItem, lI, rI){
-                var pos, middle = $(".team-wrapper").width() / 2;
-                centerItem.css({zIndex:len+1})
-                    .animate({left:"500px"})
-                    .find("img").css({opacity: 1});
-                for(pos=0;pos<lI.length;pos++){
-                    if(pos+1==lI.length)items.eq(lI[pos]).css({zIndex:0});
-                    items.eq(lI[pos])
-                        .css({zIndex:len-pos})
-                        .animate({left:(400-100*pos)+"px"})
-                        .find("img").css({opacity:.9-pos/len});
-                }
-                for(pos=0;pos<rI.length;pos++){
-                    if(pos+1==rI.length)items.eq(rI[pos]).css({zIndex:0});
-                    items.eq(rI[pos])
-                        .css({zIndex:len-pos})
-                        .animate({left:(600+100*pos)+"px"})
-                        .find("img").css({opacity:.9-pos/len});
-                }
-            }
-            , transformCovers = function (idx) {
-                var centerItem = items.eq(idx), lI = [], rI = [], pos, transform_vals;
-                for(pos=1;pos<Math.ceil(len/2);pos++){lI.push((idx-pos + len)%len)}
-                for(pos=1;pos<=Math.ceil(len/2);pos++){rI.push((idx+pos + len)%len)}
-                if(!centerItem.hasClass('selected')){
-                    (supportT?positionTrans:positionFix)(centerItem, lI, rI);
-                    centerItem.addClass('selected').siblings('.selected').removeClass('selected');
-                }
-            };
-
-            transformCovers(Math.ceil(len/2));
-            $('.coverflow').on('click','.flowItem:not(.selected)',function(){
-                var idx = parseInt($(this).data("slide"), 10);
-                transformCovers(idx);
-                $("#myCarousel").carousel(idx);
-            });
-            $("#myCarousel").on({slide: function(e){
-                transformCovers($(e.relatedTarget).index());
-            }});
-        });
+            window.team($, $("#team-carousel"), $('.coverflow'));
+        })
     </script>
 </%block>
