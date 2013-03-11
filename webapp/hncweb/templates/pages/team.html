@@ -25,12 +25,54 @@
                 <div class="team-legend">
                     <div id="team-carousel" class="carousel slide">
                         <div class="carousel-inner">
-                            ${self.buildMember("/martin.jpg", "Martin Peschke", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
-                            ${self.buildMember("/lucy.jpg", "Lucy Natek", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
-                            ${self.buildMember("/sinisa.jpg", "Sinisa Grubor", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
-                            ${self.buildMember("/harry.jpg", "Harry McCarney", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum", True)}
-                            ${self.buildMember("/jaka.jpg", "Jaka Krevelj", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
-                            ${self.buildMember("/andreas.jpg", "Andreas Kaergel", "Lorem ipsum dolor sit amet", "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsumv                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum")}
+                            <%self:buildMember  pic="/martin.jpg" name="Martin Peschke" subtitle="">
+                                <p class="short-summary">Born and raised in East Berlin, Martin is the co-founder and managing director at Hack&Craft. He completed computer science studies at the Technology University of Dresden and has since then worked with and on computers, a thing he really enjoys. He spent years of his life in China, helping MNCs manage their outsourced projects.</p>
+                                <%def name="A1()">A bit of everything as well as some of the nifty stuff on you see happening on the websites.</%def>
+                                <%def name="A2()">Programming.</%def>
+                                <%def name="A3()">We get to create what other people just dream of. What could be better than that?</%def>
+                                <%def name="A4()">Lost Horizon by James Hilton.</%def>
+                                <%def name="A5()">If it ain’t broken, find a way to make it better.</%def>
+                            </%self:buildMember>
+                            <%self:buildMember  pic="/lucy.jpg" name="Lucy Natek" subtitle="">
+                                <p class="short-summary">At a very young age Lucy decided to follow her mother’s footsteps and become a journalist when she grew up. She is still waiting for the growing up thing to happen, but her dream of becoming a lady scribe has already led her to working in every media outlet there is and for companies such as MTV and Universal Music. Before coming to Hack&Craft, Lucy was living in London, where she worked as a freelance copywriter and music journalist.</p>
+                                <%def name="A1()">I am the resident wordsmith, the lady in charge of content, branding and marketing.</%def>
+                                <%def name="A2()">Making the best of everything this glorious city has to offer. Bombard my friends’ Dropbox with music I’m currently into. And eat extensively.</%def>
+                                <%def name="A3()">Building a website or a mobile app requires the expertise and work of many people who need to communicate all throughout the process. I think people generally spend a lot of time talking at each other and not listening, so I love product development because it makes team communication absolutely essential.</%def>
+                                <%def name="A4()">I am a big reader; it’s my favourite thing to do. Poetry every day. Lyrics websites. The New Yorker, Gawker, Wikipedia. Anything and everything.</%def>
+                                <%def name="A5()">Be excellent to each other.</%def>
+                            </%self:buildMember>
+                            <%self:buildMember  pic="/sinisa.jpg" name="Sinisa Grubor" subtitle="">
+                                <p class="short-summary">Siniša is part of the software development team at Hack&Craft. He recently completed his computer science studies in Slovenia and moved to Berlin because he wanted to give himself a bit of a challenge.</p>
+                                <%def name="A1()">I work as a software developer.</%def>
+                                <%def name="A2()">Go fishing.</%def>
+                                <%def name="A3()">Definitely the fact that learning never stops in this line of work. I'm learning new things with every project and I feel it keeps my brain alive.</%def>
+                                <%def name="A4()">Web page source code.</%def>
+                                <%def name="A5()">"Imagination is more important than knowledge," and "Pleasure in the job puts perfection in the work." Einstein and Aristotle.</%def>
+                            </%self:buildMember>
+                            <%self:buildMember  pic="/harry.jpg" name="Harry McCarney" subtitle="" active="True">
+                                <p class="short-summary">Harry is the co-founder and managing director at Hack&Craft. He has a masters degree in philosophy but found programming to be a more reliable way of paying the rent. After founding several successful companies in the UK he moved to Berlin in 2009. He has a knack for turning ideas into real life things and founded hack and craft to help others to the same.</p>
+                                <%def name="A1()">A little bit of everything. I meet with and talk to a lot of people about their ideas and business models. I try to work out what the logical components of product ideas are and write the backend code to implement them. The rest of the week I am analysing user feedback and keeping people happy.</%def>
+                                <%def name="A2()">Playing table tennis and generally wandering around the city looking for interesting places and people.</%def>
+                                <%def name="A3()">I like the beginning when the actual nature of the product is not yet clear, when the first connections between the features and the market are starting to emerge. It’s very exciting when you start to see how a fuzzy but intriguing idea can actually be made concrete.</%def>
+                                <%def name="A4()">Mutual Aid by Peter Kropotkin.</%def>
+                                <%def name="A5()">“Be bold and mighty forces will come to your aid”</%def>
+                            </%self:buildMember>
+                            <%self:buildMember  pic="/jaka.jpg" name="Jaka Krevelj" subtitle="">
+                                <p class="short-summary">Jaka comes from Slovenia where he completed an MA in visual communications at the Academy of Fine Arts and Design. After working as a graphic designer for several years, he moved to Berlin because he fell in love with the city vibe, its people and the Berlin way of life.</p>
+                                <%def name="A1()">I develop concepts with the team and create the visual bridge between the technical side of products and the user.</%def>
+                                <%def name="A2()">I hang out with a lot of pretty special people from Berlin, do sports and listen to good music.</%def>
+                                <%def name="A3()">My favourite part comes at the end, when all the pieces of the puzzle come together perfectly and you are left with a finished project you can be proud of.</%def>
+                                <%def name="A4()">Typographie, Emil Ruder.</%def>
+                                <%def name="A5()">Making money is art and working is art and good business is the best art. (Andy Warhol)</%def>
+                            </%self:buildMember>
+                            <%self:buildMember  pic="/andreas.jpg" name="Andreas Kaergel" subtitle="">
+                                <p class="short-summary">Andreas completed the Mildred Harnack high school and then proceeded to work as a carpenter. When he got disenchanted by his profession he started contemplating his next move. The world of computer science always appealed to him, so he taught himself HTML, CSS and PHP. After he randomly met Harry and Martin in Berlin, Andreas became the first employee of Hack&Craft.</p>
+                                <%def name="A1()">Test the software we build.</%def>
+                                <%def name="A2()">I like to go hiking. I also still like to play around with building things out of wood.</%def>
+                                <%def name="A3()">Usability.</%def>
+                                <%def name="A4()">The Prison of Freedom, by Michael Ende.</%def>
+                                <%def name="A5()">The sum of all errors in life leads to success.</%def>
+                            </%self:buildMember>
                         </div>
                     </div>
                     <div class="team-playlist">
@@ -56,13 +98,37 @@
 
 
 
-<%def name="buildMember(pic, name, subtitle, text, active = False)">
+<%def name="buildMember(pic, name, subtitle, active = False)">
     <div class="item  ${'active' if active else ''}">
         <div class="team-member">
             <h3 class="highlight">${name|n}</h3>
             <h5>${subtitle|n}</h5>
             <div class="text">
-                ${text|n}
+                ${caller.body()|n}
+
+                    <ol>
+                        <li class="question">
+                            What do you do job-wise?
+                            <div class="answer">${caller.A1()}</div>
+                        </li>
+                        <li class="question">
+                            What do you do fun-wise?
+                            <div class="answer">${caller.A2()}</div>
+                        </li>
+                        <li class="question">
+                            What is your favourite part about product development?
+                            <div class="answer">${caller.A3()}</div>
+                        </li>
+                        <li class="question">
+                            What's the last thing you read?
+                            <div class="answer">${caller.A4()}</div>
+                        </li>
+                        <li class="question">
+                            Your motto
+                            <div class="answer">${caller.A5()}</div>
+                        </li>
+                    </ol>
+
             </div>
         </div>
     </div>

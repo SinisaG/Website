@@ -56,13 +56,11 @@
 
         transformCovers(Math.ceil(len/2));
         cFlow.on('click','.flowItem:not(.selected)',function(){
-            var idx = parseInt($(this).data("slide"), 10), cur = items.filter(".selected").idx;
+            var idx = parseInt($(this).data("slide"), 10), cur = items.filter(".selected").index();
             transformCovers(idx);
-            if(Math.abs(cur - idx) == 1){
-                if(cur < idx)carouselRoot.carousel('next');
-                else carouselRoot.carousel('prev');
-            } else
-                carouselRoot.carousel(idx);
+            if((cur+1)%len == idx)carouselRoot.carousel('next');
+            else if((cur-1+len)%len == idx)carouselRoot.carousel('prev');
+            else carouselRoot.carousel(idx);
         });
         carouselRoot.on({slide: function(e){
             transformCovers($(e.relatedTarget).index());
