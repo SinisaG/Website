@@ -69,19 +69,21 @@
 // Left/right controls for nav
 // ---------------------------
 
+.carousel:hover{
+  .carousel-control.right {.opacity(20);}
+  .carousel-control.left {.opacity(20);}
+}
 .carousel-control {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 1px;
   height: 0;
-  border-right: 50px solid rgba(0,0,0,.1);
-  border-top: 150px solid transparent;
-  border-bottom: 150px solid transparent;
   width: 0;
-
   display: block;
   text-indent: 10px;
   line-height: 24px;
+  .opacity(10);
+  .transition(opacity .1s linear);
 
 // we can't have this transition here
 // because webkit cancels the carousel
@@ -91,9 +93,17 @@
 // .transition(opacity .2s linear);
 
 // Reposition the right one
+  &.left {
+    border-right: 50px solid #777;
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+  }
   &.right {
     left: auto;
-    right: 60px;
+    right: 1px;
+    border-left: 50px solid #777;
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
 
     display: block;
     text-indent: -5px;
@@ -105,7 +115,8 @@
   &:focus {
     color: @white;
     text-decoration: none;
-    .opacity(90);
+      &.right {.opacity(60) !important;}
+      &.left {.opacity(60) !important;}
   }
 }
 
